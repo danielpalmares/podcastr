@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Happy" title="Happy" src="https://github.com/danielpalmares/podcastr/blob/main/public/logo.svg" />
+  <img alt="Podcastr" title="Podcastr" src="https://github.com/danielpalmares/podcastr/blob/main/public/logo.svg" />
 </h1>
 
 <p align="center">
@@ -14,7 +14,7 @@
 ---
 
 <p align="center">
-  Podcastr is an app made in the nlw week, here you're supposed to find out lots of topics related to programming. 🤖
+  Podcastr is an app made in the nlw week, here you're supposed to find out lots of topics related to programming 🤖
 </p>
 
 ---
@@ -28,6 +28,7 @@
 ## Status
 
 Final version done! ☄️
+
 Without mobile responsivity.
 
 ## Pre-requirements
@@ -35,7 +36,7 @@ Without mobile responsivity.
 Before getting started, you'll need to have installed in your machine these tools: 
 
 - [Git](https://git-scm.com) 
-- [Node.js](https://nodejs.org/en/)
+- [Node JS](https://nodejs.org/en/)
 
 Besides that, it's a good idea to have a nice text editor like [VSCode](https://code.visualstudio.com/)
 
