@@ -1,32 +1,15 @@
+import { useContext } from 'react';
 import { GetStaticProps } from 'next';
+import { PlayerContext } from '../contexts/PlayerContext';
+import { api } from '../services/api';
+import { convertDurationToTimeString } from '../utils/convertDurationToTimeString';
+import { format, parseISO } from 'date-fns';
+import { HomeProps } from './homeTypes';
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
-import { format, parseISO } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
-import { api } from '../services/api';
-import { convertDurationToTimeString } from '../utils/convertDurationToTimeString';
-
 import styles from './home.module.scss';
-import { useContext } from 'react';
-import { PlayerContext } from '../contexts/PlayerContext';
-
-type Episodes = {
-  id: string;
-  title: string;
-  members: string;
-  thumbnail: string;
-  description: string;
-  duration: number;
-  durationAsString: string;
-  url: string;
-  publishedAt: string;
-};
-
-type HomeProps = {
-  latestEpisodes: Array<Episodes>;
-  allEpisodes: Array<Episodes>;
-};
 
 export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
   const { playList } = useContext(PlayerContext);

@@ -1,11 +1,11 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import { PlayerContext } from '../../contexts/PlayerContext';
+import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
 import Image from 'next/image';
 import Slider from 'rc-slider';
 
-import styles from './styles.module.scss';
 import 'rc-slider/assets/index.css';
-import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
+import styles from './styles.module.scss';
 
 export function Player() {
   const {
@@ -26,8 +26,8 @@ export function Player() {
   } = useContext(PlayerContext);
 
   const audioRef = useRef<HTMLAudioElement>(null);
-
   const [progress, setProgress] = useState(0);
+  const episode = episodeList[currentEpisodeIndex];
 
   function setupProgressListener() {
     audioRef.current.currentTime = 0;
@@ -60,8 +60,6 @@ export function Player() {
       audioRef.current.pause();
     }
   }, [isPlaying]);
-
-  const episode = episodeList[currentEpisodeIndex];
 
   return (
     <div className={styles.playerContainer}>
@@ -123,7 +121,7 @@ export function Player() {
         <div className={styles.buttons}>
           <button
             type="button"
-            disabled={!episode || episodeList.length === 1}
+            disabled={isLooping || !episode || episodeList.length === 1}
             onClick={toggleShuffle}
             className={isShuffling ? styles.isActive : ''}
           >
@@ -161,7 +159,7 @@ export function Player() {
 
           <button
             type="button"
-            disabled={!episode}
+            disabled={!episode || isShuffling}
             onClick={toggleLoop}
             className={isLooping ? styles.isActive : ''}
           >
