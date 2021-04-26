@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <a href="#screenshots">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#status">Status</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#pre-requirements">Pre-requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#instructions">Instructions</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -29,7 +29,7 @@
 
 Final version done! ☄️
 
-Without mobile responsivity.
+Without mobile responsivity
 
 ## Pre-requirements
 
@@ -57,7 +57,7 @@ $ npm install
 # Run the server-json
 $ npm run server
 
-# The server will start at port:3333 - go to <http://localhost:3333>
+# The server will start!
 ```
 
 ### Running Front End (Client)
