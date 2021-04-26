@@ -7,7 +7,7 @@
   <a href="#status">Status</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#pre-requirements">Pre-requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#instructions">Instructions</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tools">Tools</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
 </p>
 
@@ -57,7 +57,7 @@ $ npm install
 # Run the server-json
 $ npm run server
 
-# The server will start!
+# The server will start
 ```
 
 ### Running Front End (Client)
@@ -69,7 +69,7 @@ $ cd podcastr
 # Run the application in development mode
 $ npm run dev
 
-# The server will start!
+# The server will start
 ```
 
 ## Tools
