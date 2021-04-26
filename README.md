@@ -14,7 +14,7 @@
 ---
 
 <p align="center">
-  Podcastr is an app made in the nlw week, here you're supposed to find out lots of topics related to programming 🤖
+  On Podcastr you're supposed to find out lots of topics related to programming 🤖
 </p>
 
 ---
