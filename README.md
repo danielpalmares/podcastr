@@ -76,7 +76,6 @@ $ npm run dev
 
 These tools were used in the project:
 
-- [Node JS](https://nodejs.org/en/)
 - [React JS](https://pt-br.reactjs.org/)
 - [Next JS](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
